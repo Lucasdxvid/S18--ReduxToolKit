@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { decrement, increment, incrementBy } from "./store/slices/counter";
 import viteLogo from "/vite.svg";
-import "./App.css";
+// import "./App.css";
 
 function App() {
   const { counter } = useSelector((state) => state.counter); //* 1er argumento (state - nuestro objeto counter) / Sirve para seleccionar o tomar alguna pieza del state, leer algo del STORE

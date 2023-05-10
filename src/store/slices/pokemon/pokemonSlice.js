@@ -11,7 +11,7 @@ export const pokemonSlice = createSlice({
   },
   reducers: {
     startLoadingPokemons: (state /* action */) => {
-      state.isLoading = true; //* Definimos el loading, el estado pasara a TRUE cuando llamemos el reducer
+      state.isLoading = true; //* Definimos el loading, el estado pasara a TRUE cuando llamemos el reducer (estado de carga)
     },
     setPokemons: (state, action) => {
       console.log(action);

@@ -1,3 +1,4 @@
 // Barrel
 
-export * from "./pokemonSlice"
+export * from "./pokemonSlice";
+export * from "./thunks";
