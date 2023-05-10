@@ -6,7 +6,7 @@ export const pokemonSlice = createSlice({
   name: "pokemon",
   initialState: {
     page: 10,
-    pokemon: [],
+    pokemons: [],
     isLoading: false,
   },
   reducers: {
@@ -14,7 +14,9 @@ export const pokemonSlice = createSlice({
       state.isLoading = true; //* Definimos el loading, el estado pasara a TRUE cuando llamemos el reducer (estado de carga)
     },
     setPokemons: (state, action) => {
-      console.log(action);
+      state.isLoading = false; //* Deja de cargar
+      state.page = action.payload.page; //* Establecemos el numero de la pagina
+      state.pokemons = action.payload.pokemons //* Rellenamos el objeto de pokemons
     },
   },
 });
